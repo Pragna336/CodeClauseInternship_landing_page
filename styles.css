@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #6b3e26;
+}
+
+/* Header Section */
+.header {
+    color: white;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.header h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px #6b3e26;
+}
+
+.header p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+/* Order Now Button */
+.header .btn {
+    background-color: #d2691e;
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.header .btn:hover {
+    background-color: #f4e1d2;
+    color: #6b3e26;
+    transform: scale(1.05);
+}
+
+/* Specialties Section */
+.features {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f4e1d2;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Feature Boxes */
+.feature-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+/* Hover Effect */
+.feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Feature Box Content */
+.feature-box h3 {
+    font-size: 1.5rem;
+    color: #6b3e26;
+}
+
+.feature-box p {
+    font-size: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Testimonial Box */
+.testimonial {
+    background-color: #f4e1d2;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px;
+    width: 30%;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+/* Testimonial Hover Effect */
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #6b3e26;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CTA Text */
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Call to Action Button */
+.cta .btn {
+    background-color: white;
+    color: #6b3e26;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* Button Hover Effect */
+.cta .btn:hover {
+    background-color: #d2691e;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Center the content properly */
+.cta .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #3e2c23;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* For Tablets (768px and below) */
+@media (max-width: 768px) {
+    .feature-box, .testimonial {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .header .btn {
+        padding: 10px 25px;
+    }
+
+    .cta h2 {
+        font-size: 2rem;
+    }
+
+    .cta p {
+        font-size: 1rem;
+    }
+
+    .cta .btn {
+        padding: 10px 20px;
+    }
+}
+
+/* For Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .header {
+        padding: 100px 0;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .header .btn {
+        padding: 10px 20px;
+    }
+
+    .feature-box {
+        width: 100%;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta p {
+        font-size: 0.9rem;
+    }
+
+    .cta .btn {
+        padding: 10px 18px;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+}
